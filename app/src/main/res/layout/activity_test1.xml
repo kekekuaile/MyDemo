@@ -30,19 +30,19 @@
                 android:layout_height="@dimen/header_height"
                 android:background="@color/colorPrimaryDark" />
 
-            <!--<android.support.design.widget.TabLayout-->
-                <!--android:id="@+id/tab"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="45dp"-->
-                <!--android:background="#ffffff"-->
-                <!--android:fillViewport="false"-->
-                <!--app:tabMode="fixed"-->
-                <!--app:layout_scrollFlags="scroll"-->
-                <!--app:tabIndicatorColor="#057523"-->
-                <!--app:tabIndicatorHeight="2.0dp"-->
-                <!--app:tabSelectedTextColor="#057523"-->
-                <!--android:visibility="gone"-->
-                <!--app:tabTextColor="#ced0d3"></android.support.design.widget.TabLayout>-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ffffff"
+                android:fillViewport="false"
+                app:tabMode="fixed"
+                app:layout_scrollFlags="scroll"
+                app:tabIndicatorColor="#057523"
+                app:tabIndicatorHeight="2.0dp"
+                app:tabSelectedTextColor="#057523"
+                android:visibility="gone"
+                app:tabTextColor="#ced0d3"></android.support.design.widget.TabLayout>
         </android.support.design.widget.AppBarLayout>
 
         <!-- 这个viewpager则是触发滚动的view，每一项可以设置为recyclerview的fragment，

@@ -36,8 +36,8 @@ public class MainTabFragment extends Fragment {
 
     public void initWidget(){
 
-//        String type = getArguments().getString("type");
-//        adapter = new TestRvAdapter(getActivity(),type);
+        String type = getArguments().getString("type");
+        adapter = new TestRvAdapter(getActivity(),type);
         adapter = new TestRvAdapter(getActivity());
         mRvList = (RecyclerView) rootView.findViewById(R.id.rv_list);
         mRvList.setLayoutManager(new LinearLayoutManager(getActivity()));

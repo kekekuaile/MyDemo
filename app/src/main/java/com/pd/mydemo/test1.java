@@ -35,16 +35,16 @@ public class test1 extends AppCompatActivity {
     private void init() {
         mainTabFragmentAdapter = new MainTabFragmentAdapter(getSupportFragmentManager(), this);
         mViewPager = findViewById(R.id.viewpager);
-//        mTabLayout = findViewById(R.id.tab);
-//        mTabLayout.addTab(mTabLayout.newTab().setText("AAA"));
-//        mTabLayout.addTab(mTabLayout.newTab().setText("BBB"));
-//        mTabLayout.addTab(mTabLayout.newTab().setText("CCC"));
-//        mTabLayout.addTab(mTabLayout.newTab().setText("DDD"));
+        mTabLayout = findViewById(R.id.tab);
+        mTabLayout.addTab(mTabLayout.newTab().setText("AAA"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("BBB"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("CCC"));
+        mTabLayout.addTab(mTabLayout.newTab().setText("DDD"));
         mViewPager.setAdapter(mainTabFragmentAdapter);
         mViewPager.setOffscreenPageLimit(2);
-//        mTabLayout.setupWithViewPager(mViewPager);
-//        headerLayout = findViewById(R.id.ll_header_layout);
-//        initAppBarLayout();
+        mTabLayout.setupWithViewPager(mViewPager);
+        headerLayout = findViewById(R.id.ll_header_layout);
+        initAppBarLayout();
     }
 
     // 初始化AppBarLayout

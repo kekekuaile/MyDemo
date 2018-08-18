@@ -45,8 +45,8 @@ public class MainTabFragmentAdapter extends FragmentPagerAdapter {
         fragments = new ArrayList<>();
 
         for ( int i=0; i < titles.length; i++ ){
-//            Fragment fragment = MainTabFragment.newInstance(i+"");
-            Fragment fragment = MainTabFragment.newInstance();
+            Fragment fragment = MainTabFragment.newInstance(i+"");
+//            Fragment fragment = MainTabFragment.newInstance();
             fragments.add(fragment);
         }
     }

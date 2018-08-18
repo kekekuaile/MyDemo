@@ -34,13 +34,13 @@ public class TestRvAdapter extends RecyclerView.Adapter<TestRvAdapter.TestViewHo
 
     @Override
     public int getItemCount() {
-//        if ("1".equals(type) || "3".equals(type)) {
-//            return 10;
-//
-//        } else {
-//            return 100;
-//        }
-return 10;
+        if ("1".equals(type) || "3".equals(type)) {
+            return 10;
+
+        } else {
+            return 100;
+        }
+
     }
 
     class TestViewHolder extends RecyclerView.ViewHolder {
